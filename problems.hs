@@ -70,3 +70,35 @@ pack xs = pack_acc xs [] where
 encode xs = encode_sublist (pack xs) where
     encode_sublist [] = []
     encode_sublist (y:ys) = (myLength y, head y):encode_sublist ys
+
+
+-- problem 11
+data Encoding a = Single a | Multiple Int a deriving Show
+encodeModified xs = map (\(c, e) -> if c == 1 then Single e else Multiple c e) (encode xs)
+
+
+-- problem 12
+
+
+-- problem 13
+
+
+-- problem 14
+
+
+-- problem 15
+
+
+-- problem 16
+
+
+-- problem 17
+
+
+-- problem 18
+
+
+-- problem 19
+
+
+-- problem 20
